@@ -85,7 +85,7 @@ async def on_message(msg):
       delete = datalist.delete_data(int(index))
       await msg.channel.send(delete)
 
-
+# agar bot bisa jalan terus
 keep_alive()
 
 # menjalankan bot
