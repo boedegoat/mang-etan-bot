@@ -7,25 +7,29 @@ class Interactions :
 
   @property
   def help(self) :
-    return ['tulung','tolong']
+    return ('tulung','tolong')
+
+  @property
+  def terlarang(self) :
+    return ('antin','utiek','thrio','trio')
 
   @property
   def toxic(self) :
-    return ['bacot', 'anjing', 'goblok', 'tolol', 'bangsat', 'kontol', 'asu', 'asw', 'jancuk', 'jancok']
+    return ('bacot', 'anjing', 'goblok', 'tolol', 'bangsat', 'kontol', 'asu', 'asw', 'jancuk', 'jancok')
 
   @property
   def replyToxic(self) :
-    return [
+    return (
       'sing sabar broo',
       'ada pegerangan apa si kawan ?',
-    ]
+    )
 
   @property
   def capsExcepts(self) :
-    return ['HA','AWOK','WK','KWOK', 'GG', 'GEGE', 
+    return ('HA','AWOK','WK','KWOK', 'GG', 'GEGE', 
     'MANTAP', 'KEREN', 'IRI BILANG BOS', 'MAKASIH', 'THANK YOU', 'THANKS', 
     'WOKE', 'MABAR KUY'
-    ]
+    )
 
 class Formatting :
   def __init__(self) :

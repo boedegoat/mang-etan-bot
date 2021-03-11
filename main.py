@@ -5,6 +5,7 @@ import random
 import msg
 import datalist
 from keep_alive import keep_alive
+import re
 
 
 # discord
@@ -52,6 +53,16 @@ async def on_message(msg):
   if user_input.startswith('-quote') :
     quote = quotes.getQuote()
     await msg.channel.send(f'{write.quote_bold_italic(quote)}')
+
+  if user_input.startswith('-emote') :
+    await msg.channel.send("<:conehead:819424915396231188>")
+
+  if any(word in user_input.lower() for word in user.terlarang) :
+    for t in user.terlarang :
+      kata_terlarang = re.search(pattern= t, string= user_input)
+      if kata_terlarang :
+        await msg.channel.send(f'❌ Error : Mengandung kata terlarang ({kata_terlarang.group()})')
+    await msg.delete()    
 
   if any(word in user_input.lower() for word in user.toxic) :
     await msg.channel.send(random.choice(user.replyToxic))
