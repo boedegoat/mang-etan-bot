@@ -18,7 +18,7 @@ def getQuote() :
       del last_quote[1]
 
 def quotes_list() :
-  quotes = [
+  quotes = (
   "Cantik nggak harus putih, tapi mesti perempuan.",
   "Mencintaimu itu wajar. Yang nggak wajar itu mencintai bapakmu.",
   "Rumah tangga itu rumit. Kalau sederhana itu namanya rumah makan.",
@@ -37,6 +37,6 @@ def quotes_list() :
   "Jika kamu tak mampu meyakinkan dan memukau orang dengan kepintaranmu, bingungkan dia dengan kebodohanmu",
   "Buat apa mencintai tanpa dicintai, mending cintai ususmu minum yakult tiap hari",
   "Hidup itu ibarat sungai yang mengalir, ada aja tai yang lewat.",
-  ]
+  )
 
   return quotes
