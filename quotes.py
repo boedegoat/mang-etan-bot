@@ -15,7 +15,7 @@ def getQuote() :
       return quote
 
     else :
-      del last_quote[1]
+      last_quote.pop()
 
 def quotes_list() :
   quotes = (
